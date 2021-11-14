@@ -68,8 +68,9 @@ function myClick() {}
 ###### simple `manual` (with api)
 
 ```js
-const [sync, setSync] = useState(false)
+// here is the sample, please update it exactly with your source
 
+const [sync, setSync] = useState(false)
 // fetch api // do something
 fetchApi() {
     if (sync) {
@@ -87,7 +88,7 @@ fetchApi() {
     tooltipContent={<div>{todo.title}e<br />fds</div>}
     trigger="manual"
     placement='right'
-    showSync={state} // manual simple
+    showSync={sync} // manual simple
 >
 	<button>Tooltip of todo</button>
 </Tooltip>
@@ -100,6 +101,8 @@ fetchApi() {
 ##### More complex (with api + useTooltipContext)
 
 ```js
+// here is the sample, please update it exactly with your source
+
 import { Tooltip, useTooltipContext } from "react-tooltip-z";
 
 // ListData.js
@@ -122,9 +125,8 @@ import { Tooltip, useTooltipContext } from "react-tooltip-z";
     }
 </ul>
 
-
 // ListDataItem.js (children)
-// use TooltipContext to update tooltup
+// use TooltipContext to update tooltip
 const { showTooltip, hideTooltip, isShow, tooltipId} = useTooltipContext()
 
 // do something and show tooltip
