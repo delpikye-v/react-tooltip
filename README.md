@@ -11,9 +11,9 @@
 
 #### Desciption
 
-It is wrap the tooltip for the element. (Cusomize tooltip - `html/css/complex`)
+It is wrap the tooltip for the element. (Customize tooltip - `html/css/complex`)
 
-Append the tooltip outside the root (`portal element`).
+Append the tooltip outside the root. (`portal element`).
 
 ---
 ### Usage
@@ -59,7 +59,7 @@ function myClick() {}
     trigger="click"
     handleClick={() => alert('event active')} // myClick()
 >
-	<button>this is children</button>
+    <button>this is children</button>
 </Tooltip>
 ```
 
@@ -90,7 +90,7 @@ fetchApi() {
     placement='right'
     showSync={sync} // manual simple
 >
-	<button>Tooltip of todo</button>
+    <button>Tooltip of todo</button>
 </Tooltip>
 
 <button onClick={fetchApi}>Fetch</button>
@@ -150,30 +150,31 @@ fetchApi() {
 
 #### props
 
-| props            	| type                  		| desciption                                                         		|
-|-------------------|-------------------------------|---------------------------------------------------------------------------|
-| tagName          	| String                		| If you wrap all children component,  use this                      		|
-| tooltipClassName 	| String                		|                                                                    		|
-| tooltipContent   	| `String`/`Component`/ `jsx`   | Tooltip data                                                   			|
-| placement        	| `top`/`right`/`left`/`bottom` | it relies on the element's height,  width and position to display 		|
-| trigger          	| `hover`/`click`/`manual`    	| Default `hover`                                                 			|
-| delayShow         | Number (`250`) minisecond   	| Time delay show tooltip                                    				|
-| limitWidth        | Boolean         				| Default: `true` . (Fix `max-width: 200px` / `false`: none)				|
-| handleClick      	| function              		| When use event onClick of element(trigger click)         					|
-| handleMouseEnter 	| function              		| When use event onMouseEnter of element (trigger hover)   					|
-| handleMouseLeave 	| function              		| When use event onMouseLeave of element (trigger hover)              		|
-| onShown      		| function 						| Handle after show              											|
-| onHidden     		| function 						| Handle after hide              											|
-| showSync     		| boolean  						| Simple trigger = manual       											|
-| hideIfResize 		| boolean  						| hide tooltip if resize screen  (true)										|
-| ...props 			| other	  						| other props exact of elements												|
+| props                | type                          | desciption                                                                 |
+|----------------------|-------------------------------|----------------------------------------------------------------------------|
+| tagName              | String                        | If you wrap all children component,  use this                              |
+| tooltipClassName     | String                        |                                                                            |
+| tooltipContent       | `String`/`Component`/ `jsx`   | Tooltip data                                                               |
+| placement            | `top`/`right`/`left`/`bottom` | it relies on the element's height,  width and position to display.         |
+| trigger              | `hover`/`click`/`manual`      | Default `hover`                                                            |
+| backgroundColor      | String                        | Default `#282727`                                                          |
+| delayShow            | Number (`250`) minisecond     | Time delay show tooltip                                                    |
+| limitWidth           | Boolean                       | Default: `true`. Fix `max-width: 200px` (`false`: none)                    |
+| handleClick          | function                      | When use event onClick of element.                                         |
+| handleMouseEnter     | function                      | When use event onMouseEnter of element.                                    |
+| handleMouseLeave     | function                      | When use event onMouseLeave of element.                                    |
+| onShown              | function                      | Event after show                                                           |
+| onHidden             | function                      | Event after hide                                                           |
+| showSync             | boolean                       | Simple trigger = manual                                                    |
+| hideIfResize         | boolean                       | hide tooltip if resize screen  (Default `true`)                            |
+| ...props             | other                         | other props exact of elements                                              |
 
 <br />
 
 #### Note
 
 ```js
-`showSync`, `useTooltipContext`: use when trigger = `manual`
+`showSync`, `useTooltipContext`: use when trigger = `manual`  (See demo)
 ```
 
 event: `handleClick` (onClick), `handleMouseEnter`(onMouseEnter), `handleMouseLeave` (onMouseLeave)` 
