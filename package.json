@@ -1,6 +1,6 @@
 {
   "name": "react-tooltip-z",
-  "version": "1.0.1-z",
+  "version": "1.0.2",
   "description": "Tooltip customize. (Best html/css/complex element) (React hooks)",
   "main": "build/index.js",
   "module": "build/index.esm.js",

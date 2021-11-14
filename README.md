@@ -167,6 +167,7 @@ fetchApi() {
 | onHidden             | function                      | Event after hide                                                           |
 | showSync             | boolean                       | Simple trigger = manual                                                    |
 | hideIfResize         | boolean                       | hide tooltip if resize screen  (Default `true`)                            |
+| hideIfScroll         | boolean                       | hide tooltip if scroll screen  (Default `false`)                           |
 | ...props             | other                         | other props exact of elements                                              |
 
 <br />
