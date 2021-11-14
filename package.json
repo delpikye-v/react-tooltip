@@ -1,0 +1,88 @@
+{
+  "name": "react-tooltip-z",
+  "version": "1.0.0",
+  "description": "Tooltip customize (html/css/complex element) (React hooks)",
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "browser": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "npx rollup -c",
+    "clean": "rimraf ./build",
+    "lint": "npx eslint --ext .js,.jsx .",
+    "prepare": "npm run build",
+    "start": "npm run build -- -w",
+    "test": "npx jest --coverage",
+    "is-build-es5": "npx es-check es5 './build/**/*.!(esm).js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/delpikye-v/react-tooltip.git"
+  },
+  "homepage": "https://github.com/delpikye-v/react-tooltip#readme",
+  "author": "Delpi.Kye",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-tooltip",
+    "react-custom-tooltip",
+    "react-best-tooltip",
+    "react-basic-tooltip",
+    "react-simple-tooltip",
+    "custom-tooltip"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delpikye-v/react-tooltip/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/runtime": "^7.15.4",
+    "@rollup/plugin-babel": "^5.0.2",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@rollup/plugin-replace": "^3.0.0",
+    "acorn": "^7.2.0",
+    "autoprefixer": "^9.8.0",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "^8.1.0",
+    "babel-preset-minify": "^0.6.0-alpha.9",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "es-check": "^5.1.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "jest": "^26.0.1",
+    "jest-transform-css": "^2.0.0",
+    "marked": "^1.1.0",
+    "postcss": "^7.0.32",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-test-renderer": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.13.1",
+    "rollup-plugin-filesize": "^9.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "@delpi/common": "0.0.2-z",
+    "styled-components": "^5.3.3"
+  }
+}
