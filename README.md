@@ -9,7 +9,7 @@
 
 ---
 
-#### Desciption
+#### Description
 
 It is wrap the tooltip for the element. (Customize tooltip - `html/css/complex`)
 
@@ -150,7 +150,7 @@ fetchApi() {
 
 #### props
 
-| props                | type                          | desciption                                                                 |
+| props                | type                          | description                                                                 |
 |----------------------|-------------------------------|----------------------------------------------------------------------------|
 | tagName              | String                        | If you wrap all children component,  use this                              |
 | tooltipClassName     | String                        |                                                                            |
@@ -158,6 +158,7 @@ fetchApi() {
 | placement            | `top`/`right`/`left`/`bottom` | it relies on the element's height,  width and position to display.         |
 | trigger              | `hover`/`click`/`manual`      | Default `hover`                                                            |
 | backgroundColor      | String                        | Default `#282727`                                                          |
+| tooltipColor         | String                        | Default `#ffffff`                                                          |
 | delayShow            | Number (`250`) minisecond     | Time delay show tooltip                                                    |
 | limitWidth           | Boolean                       | Default: `true`. Fix `max-width: 200px` (`false`: none)                    |
 | handleClick          | function                      | When use event onClick of element.                                         |
@@ -168,19 +169,19 @@ fetchApi() {
 | showSync             | boolean                       | Simple trigger = manual                                                    |
 | hideIfResize         | boolean                       | hide tooltip if resize screen  (Default `true`)                            |
 | hideIfScroll         | boolean                       | hide tooltip if scroll screen  (Default `false`)                           |
-| ...props             | other                         | other props exact of elements                                              |
+| `...props`           | other                         | other props of child elements                                              |
 
 <br />
 
 #### Note
 
 ```js
-`showSync`, `useTooltipContext`: use when trigger = `manual`  (See demo)
+`...props` here are the props added to the child components. (You should add on child)
+
+`showSync` or `useTooltipContext`: should be used when trigger = `manual` (See demo)
 ```
 
 event: `handleClick` (onClick), `handleMouseEnter`(onMouseEnter), `handleMouseLeave` (onMouseLeave)` 
-
-+ Tooltip using `3 function js for trigger`. So if you want to use them, please pass the props function.
 
 + `placement`: if the position of the tooltip goes beyond the screen. It try will move to the right position to be visible.
 
