@@ -57,7 +57,7 @@ function myClick() {}
     tooltipClassName="my-class"
     placement="right"
     trigger="click"
-    handleClick={() => alert('event active')} // myClick()
+    onClick={() => alert('event active')} // myClick()
 >
     <button>this is children</button>
 </Tooltip>
@@ -150,7 +150,7 @@ fetchApi() {
 
 #### props
 
-| props                | type                          | description                                                                 |
+| props                | type                          | description                                                                |
 |----------------------|-------------------------------|----------------------------------------------------------------------------|
 | tagName              | String                        | If you wrap all children component,  use this                              |
 | tooltipClassName     | String                        |                                                                            |
@@ -160,7 +160,7 @@ fetchApi() {
 | backgroundColor      | String                        | Default `#282727`                                                          |
 | tooltipColor         | String                        | Default `#ffffff`                                                          |
 | delayShow            | Number (`250`) minisecond     | Time delay show tooltip                                                    |
-| limitWidth           | Boolean                       | Default: `true`. Fix `max-width: 200px` (`false`: none)                    |
+| limitWidth           | Boolean                       | Fix `max-width: 200px`. Default: `true`.                                   |
 | handleClick          | function                      | When use event onClick of element.                                         |
 | handleMouseEnter     | function                      | When use event onMouseEnter of element.                                    |
 | handleMouseLeave     | function                      | When use event onMouseLeave of element.                                    |
@@ -169,7 +169,8 @@ fetchApi() {
 | showSync             | boolean                       | Simple trigger = manual                                                    |
 | hideIfResize         | boolean                       | hide tooltip if resize screen  (Default `true`)                            |
 | hideIfScroll         | boolean                       | hide tooltip if scroll screen  (Default `false`)                           |
-| `...props`           | other                         | other props of child elements                                              |
+| centerArrow          | boolean                       | Show arrow and tooltip on center element (Default false`)                  |
+| `...props`           | other                         | Other props of child elements                                              |
 
 <br />
 
