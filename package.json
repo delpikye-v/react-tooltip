@@ -1,7 +1,7 @@
 {
   "name": "react-tooltip-z",
-  "version": "1.1.0-dz",
-  "description": "Tooltip customize. (Best html/css/complex element) (React hooks)",
+  "version": "1.1.2",
+  "description": "Tooltip customize. Best html/css/complex element (React hooks)",
   "main": "build/index.js",
   "module": "build/index.js",
   "browser": "build/index.js",
@@ -26,11 +26,12 @@
   "author": "Delpi.Kye",
   "keywords": [
     "react",
-    "react-component",
+    "react-components",
     "react-tooltip",
     "react-custom-tooltip",
     "react-basic-tooltip",
     "react-simple-tooltip",
+    "simple-tooltip",
     "custom-tooltip"
   ],
   "license": "MIT",
