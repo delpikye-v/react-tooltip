@@ -34,30 +34,15 @@ import { Tooltip } from "react-tooltip-z";
 #### Snippet
 
 ###### simple
-```js
-// const [content, setContent] = useState('This is simple tooltip')
-<Tooltip
-    tooltipContent={'This is simple tooltip'}
-    placement="bottom"
->
-    <button>this is children</button>
-</Tooltip>
-
-```
-
-<br />
-
-###### simple `jsx/component`
 
 ```js
-function myClick() {}
-
 <Tooltip
+    // tooltipContent={'This is simple tooltip'}
     tooltipContent={<b>This is jsx<br /> Tooltip</b>} // or Component
     tooltipClassName="my-class"
     placement="right"
-    trigger="click"
-    onClick={() => alert('event active')} // myClick()
+    // trigger="click"
+    // onClick={() => alert('event active')} // myClick()
 >
     <button>this is children</button>
 </Tooltip>
@@ -65,7 +50,7 @@ function myClick() {}
 
 <br />
 
-###### simple `manual` (with api)
+###### simple: `trigger=manual` (with api)
 
 ```js
 // here is the sample, please update it exactly with your source
@@ -81,10 +66,10 @@ fetchApi() {
     fetch('api').then(....).then(rs => {
         setTodo(todo)
         setSync(true)
-    }) 
+    })
 }
 
-<Tooltip 
+<Tooltip
     tooltipContent={<div>{todo.title}e<br />fds</div>}
     trigger="manual"
     placement='right'
@@ -112,11 +97,8 @@ import { Tooltip, useTooltipContext } from "react-tooltip-z";
             return (
                 <Tooltip
                     tagName="li"  // wrap all child
-                    trigger="manual" 
+                    trigger="manual"
                     placement="right"
-
-                    // exact html prop & more...
-                    style={{ color: red }} 
                 >
                     <ListDataItem {...} />
                 </Tooltip>
@@ -125,7 +107,7 @@ import { Tooltip, useTooltipContext } from "react-tooltip-z";
     }
 </ul>
 
-// ListDataItem.js (children)
+// ListDataItem.js
 // use TooltipContext to update tooltip
 const { showTooltip, hideTooltip, isShow, tooltipId} = useTooltipContext()
 
@@ -169,7 +151,8 @@ fetchApi() {
 | showSync             | boolean                       | Simple trigger = manual                                                    |
 | hideIfResize         | boolean                       | hide tooltip if resize screen  (Default `true`)                            |
 | hideIfScroll         | boolean                       | hide tooltip if scroll screen  (Default `false`)                           |
-| centerArrow          | boolean                       | Show arrow and tooltip on center element (Default false`)                  |
+| centerArrow          | boolean                       | Show arrow and tooltip on center element (Default false)                   |
+| forceHide            | any                           | when change forceHide, tooltip will be forced hidden (Default null)        |
 | `...props`           | other                         | Other props of child elements                                              |
 
 <br />
@@ -182,11 +165,10 @@ fetchApi() {
 `showSync` or `useTooltipContext`: should be used when trigger = `manual` (See demo)
 ```
 
-event: `handleClick` (onClick), `handleMouseEnter`(onMouseEnter), `handleMouseLeave` (onMouseLeave)` 
+event: `handleClick` (onClick), `handleMouseEnter`(onMouseEnter), `handleMouseLeave` (onMouseLeave)`
 
 + `placement`: if the position of the tooltip goes beyond the screen. It try will move to the right position to be visible.
 
- 
 <br />
 
 #### RUN
