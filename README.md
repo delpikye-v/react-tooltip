@@ -3,7 +3,7 @@
     <a href="https://github.com/delpikye-v/react-tooltip">react-tooltip-z</a>
     <br />
     <br />
-    <b><a href="https://codesandbox.io/s/react-tooltip-0bspg">LIVE EXAMPLE</a>
+    <b><a href="https://codesandbox.io/s/0bspg">LIVE EXAMPLE</a>
     </b>
 </div>
 
@@ -130,31 +130,31 @@ fetchApi() {
 ---
 
 
-#### props
+#### props (mains)
 
-| props                | type                          | description                                                                |
-|----------------------|-------------------------------|----------------------------------------------------------------------------|
-| tagName              | String                        | If you wrap all children component,  use this                              |
-| tooltipClassName     | String                        |                                                                            |
-| tooltipContent       | `String`/`Component`/ `jsx`   | Tooltip data                                                               |
-| placement            | `top`/`right`/`left`/`bottom` | it relies on the element's height,  width and position to display.         |
-| trigger              | `hover`/`click`/`manual`      | Default `hover`                                                            |
-| backgroundColor      | String                        | Default `#282727`                                                          |
-| tooltipColor         | String                        | Default `#ffffff`                                                          |
-| delayShow            | Number (`250`) minisecond     | Time delay show tooltip                                                    |
-| limitWidth           | Boolean                       | Fix `max-width: 200px`. Default: `true`.                                   |
-| handleClick          | function                      | When use event onClick of element.                                         |
-| handleMouseEnter     | function                      | When use event onMouseEnter of element.                                    |
-| handleMouseLeave     | function                      | When use event onMouseLeave of element.                                    |
-| onShown              | function                      | Event after show                                                           |
-| onHidden             | function                      | Event after hide                                                           |
-| showSync             | boolean                       | Simple trigger = manual                                                    |
-| hideIfResize         | boolean                       | hide tooltip if resize screen  (Default `true`)                            |
-| hideIfScroll         | boolean                       | hide tooltip if scroll screen  (Default `false`)                           |
-| centerArrow          | boolean                       | Show arrow and tooltip on center element (Default false)                   |
-| forceHide            | any                           | when change forceHide, tooltip will be forced hidden (Default null)        |
-| `...props`           | other                         | Other props of child elements                                              |
+| props                | type                          | description                                                           |
+|----------------------|-------------------------------|-----------------------------------------------------------------------|
+| tagName              | String                        | If you wrap all children component,  use this                         |
+| tooltipClassName     | String                        |                                                                       |
+| tooltipContent       | `String`/`Component`/ `jsx`   | Tooltip data                                                          |
+| placement            | `top`/`right`/`left`/`bottom` | it relies on the element's height,  width and position to display.    |
+| trigger              | `hover`/`click`/`manual`      | Default `hover`                                                       |
+| backgroundColor      | String                        | Default `#282727`                                                     |
+| tooltipColor         | String                        | Default `#ffffff`                                                     |
+| delayShow            | Number (`250`) minisecond     | Time delay show tooltip                                               |
+| display              | `fade`/`zoom`                 | Animate tooltip                                                       |
+| limitWidth           | Boolean                       | Fix `max-width: 200px`. Default: `true`.                              |
+| onShown              | function                      | Event after show                                                      |
+| onHidden             | function                      | Event after hide                                                      |
+| showSync             | Boolean                       | Simple trigger = manual                                               |
+| open                 | Boolean                       | Show tooltip                                                          |
+| hideIfResize         | Boolean                       | hide tooltip if resize screen  (Default `true`)                       |
+| hideIfScroll         | Boolean                       | hide tooltip if scroll screen  (Default `false`)                      |
+| centerArrow          | Boolean                       | Show arrow and tooltip on center element (Default false)              |
+| forceHide            | any                           | when change forceHide, tooltip will be forced hidden (Default null)   |
+| `...props`           | other                         | Other props of child elements                                         |
 
+`top` || `right` || `bottom` || `left` || `placement`
 <br />
 
 #### Note
@@ -162,10 +162,8 @@ fetchApi() {
 ```js
 `...props` here are the props added to the child components. (You should add on child)
 
-`showSync` or `useTooltipContext`: should be used when trigger = `manual` (See demo)
+`showSync` or `useTooltipContext`: should be used when trigger = `manual`
 ```
-
-event: `handleClick` (onClick), `handleMouseEnter`(onMouseEnter), `handleMouseLeave` (onMouseLeave)`
 
 + `placement`: if the position of the tooltip goes beyond the screen. It try will move to the right position to be visible.
 
@@ -173,7 +171,7 @@ event: `handleClick` (onClick), `handleMouseEnter`(onMouseEnter), `handleMouseLe
 
 #### RUN
 
-<b><a href="https://codesandbox.io/s/react-tooltip-0bspg">LIVE EXAMPLE</a>
+<b><a href="https://codesandbox.io/s/0bspg">LIVE EXAMPLE</a>
 
 <br />
 
