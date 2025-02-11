@@ -9,19 +9,27 @@
 
 ---
 
-#### Description
-
-It is wrap the tooltip for the element. (Customize tooltip - `html/css/complex`)
-
-Append the tooltip outside the root. (`portal element`).
+[![NPM](https://img.shields.io/npm/v/react-tooltip-z.svg)](https://www.npmjs.com/package/react-tooltip-z)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![Downloads](https://img.shields.io/npm/dt/react-tooltip-z.svg)
 
 ---
-### Usage
+
+#### Description
+
++ It is wrap the tooltip for the element.
+
++ Customize tooltip `html/css/complex`
+
++ Append the tooltip outside the root. `portal element`.
+
+---
+#### Usage
 
 Install the package
 
 ```js
-npm install --save react-tooltip-z
+npm install react-tooltip-z
 ```
 
 Import the module in the place you want to use:
@@ -33,7 +41,7 @@ import { Tooltip } from "react-tooltip-z";
 
 #### Snippet
 
-###### simple
+##### simple
 
 ```js
 <Tooltip
@@ -50,7 +58,7 @@ import { Tooltip } from "react-tooltip-z";
 
 <br />
 
-###### simple: `trigger=manual` (with api)
+##### manual + api
 
 ```js
 // here is the sample, please update it exactly with your source
@@ -83,9 +91,10 @@ fetchApi() {
 
 <br />
 
-##### More complex (with api + useTooltipContext)
+##### useTooltipContext + api
 
 ```js
+// don't use nested context
 // here is the sample, please update it exactly with your source
 
 import { Tooltip, useTooltipContext } from "react-tooltip-z";
@@ -129,8 +138,7 @@ fetchApi() {
 
 ---
 
-
-#### props (mains)
+#### Props (mains)
 
 | props                | type                          | description                                                           |
 |----------------------|-------------------------------|-----------------------------------------------------------------------|
@@ -141,7 +149,7 @@ fetchApi() {
 | trigger              | `hover`/`click`/`manual`      | Default `hover`                                                       |
 | backgroundColor      | String                        | Default `#282727`                                                     |
 | tooltipColor         | String                        | Default `#ffffff`                                                     |
-| delayShow            | Number (`250`) minisecond     | Time delay show tooltip                                               |
+| delayShow            | Number `250` mini-second      | Time delay show tooltip                                               |
 | display              | `fade`/`zoom`                 | Animate tooltip                                                       |
 | limitWidth           | Boolean                       | Fix `max-width: 200px`. Default: `true`.                              |
 | onShown              | function                      | Event after show                                                      |
@@ -154,27 +162,31 @@ fetchApi() {
 | forceHide            | any                           | when change forceHide, tooltip will be forced hidden (Default null)   |
 | `...props`           | other                         | Other props of child elements                                         |
 
-`top` || `right` || `bottom` || `left` || `placement`
 <br />
 
 #### Note
 
 ```js
+
+`top` || `right` || `bottom` || `left` || `placement`: position the element
+
 `...props` here are the props added to the child components. (You should add on child)
 
 `showSync` or `useTooltipContext`: should be used when trigger = `manual`
 ```
 
-+ `placement`: if the position of the tooltip goes beyond the screen. It try will move to the right position to be visible.
++ `placement`: if the position of the tooltip goes beyond the screen.
+  It try will move to the right position to be visible.
 
 <br />
 
-#### RUN
+#### Run
+
+<br />
 
 <b><a href="https://codesandbox.io/s/0bspg">LIVE EXAMPLE</a>
 
 <br />
 
-### License
-
+#### License
 MIT
