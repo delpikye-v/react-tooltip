@@ -1,6 +1,7 @@
 import React from 'react';
 import { IFTooltipBaseProps, TypeTrigger } from './types';
 export interface IFTooltipProps extends IFTooltipBaseProps {
+    children: React.ReactNode | string;
     tagName?: string;
     className?: string;
     style?: React.CSSProperties;
