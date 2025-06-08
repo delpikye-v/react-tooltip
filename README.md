@@ -11,7 +11,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-tooltip-z.svg)](https://www.npmjs.com/package/react-tooltip-z)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-![Downloads](https://img.shields.io/npm/dt/react-tooltip-z.svg)
+![Downloads](https://img.shields.io/npm/dt/react-tooltip.svg)
 
 ---
 
