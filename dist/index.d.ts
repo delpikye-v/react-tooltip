@@ -1,9 +1,10 @@
-import Tooltip, { IFTooltipProps } from "./components/Tooltip";
-import TooltipContent, { IFTooltipContentProps } from "./components/TooltipContent";
-import TooltipContext, { IFContextProps, useTooltipContext } from "./components/TooltipContext";
-import TooltipPortal, { IFTooltipPortalProps } from "./components/TooltipPortal";
-import { IFTooltipBaseProps, TypePlacement, TypeTrigger } from "./components/types";
-import { usePortalTooltip } from "./components/useHooks";
+export * from "./components/Tooltip";
+export * from "./components/TooltipContent";
+export * from "./components/TooltipPortal";
+export * from "./components/TooltipContext";
+export * from "./components/Styled";
+export * from "./components/types";
 export * from "./components/utils";
-export { Tooltip, TooltipContent, TooltipContext, TooltipPortal, useTooltipContext, usePortalTooltip, IFTooltipBaseProps, IFTooltipProps, IFTooltipContentProps, IFTooltipPortalProps, IFContextProps, TypePlacement, TypeTrigger, };
+export * from "./components/useHooks";
+import Tooltip from "./components/Tooltip";
 export default Tooltip;

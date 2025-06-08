@@ -1,6 +1,6 @@
 {
   "name": "react-tooltip-z",
-  "version": "2.2.1",
+  "version": "2.3.1",
   "description": "React simple tooltip - ts/js. Fetch, click, hover...",
   "author": "Delpi.Kye",
   "license": "MIT",
@@ -86,7 +86,6 @@
   },
   "dependencies": {
     "@delpi/common": "0.1.0",
-    "react-if-vz": "^1.0.0",
     "styled-components": "^6.1.15"
   }
 }

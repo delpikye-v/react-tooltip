@@ -1,1 +1,1 @@
-export declare const usePortalTooltip: () => HTMLElement | null;
+export declare const usePortalTooltip: () => HTMLElement | Element | undefined;
