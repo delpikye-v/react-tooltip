@@ -4,12 +4,12 @@ export type TypeTrigger = 'hover' | 'focus' | 'click' | 'manual';
 export interface IFTooltipBaseProps {
     tooltipContent?: string | React.ReactNode;
     tooltipClassName?: string;
-    limitWidth?: boolean;
-    delayShow?: number | string;
-    display?: 'fade' | 'zoom';
+    constrainWidth?: boolean;
+    showDelay?: number | string;
+    animationDisplay?: 'fade' | 'zoom';
     backgroundColor?: string;
     tooltipColor?: string;
-    centerArrow?: boolean;
+    arrowCentered?: boolean;
     placement?: TypePlacement;
     top?: boolean;
     bottom?: boolean;

@@ -105,6 +105,7 @@ import { Tooltip, useTooltipContext } from "react-tooltip-z";
         post.map(item => {
             return (
                 <Tooltip
+                    {/* shareContext */}
                     tagName="li"  // wrap all child
                     trigger="manual"
                     placement="right"
@@ -149,16 +150,16 @@ fetchApi() {
 | trigger              | `hover`/`click`/`manual`      | Default `hover`                                                       |
 | backgroundColor      | String                        | Default `#282727`                                                     |
 | tooltipColor         | String                        | Default `#ffffff`                                                     |
-| delayShow            | Number `250` mini-second      | Time delay show tooltip                                               |
-| display              | `fade`/`zoom`                 | Animate tooltip                                                       |
-| limitWidth           | Boolean                       | Fix `max-width: 200px`. Default: `true`.                              |
+| showDelay            | Number `250` mini-second      | Time delay show tooltip                                               |
+| animationDisplay     | `fade`/`zoom`                 | Animate tooltip                                                       |
+| constrainWidth       | Boolean                       | Fix `max-width: 200px`. Default: `true`.                              |
 | onShown              | function                      | Event after show                                                      |
 | onHidden             | function                      | Event after hide                                                      |
 | showSync             | Boolean                       | Simple trigger = manual                                               |
 | open                 | Boolean                       | Show tooltip                                                          |
 | hideIfResize         | Boolean                       | hide tooltip if resize screen  (Default `true`)                       |
 | hideIfScroll         | Boolean                       | hide tooltip if scroll screen  (Default `false`)                      |
-| centerArrow          | Boolean                       | Show arrow and tooltip on center element (Default false)              |
+| arrowCentered        | Boolean                       | Show arrow and tooltip on center element (Default false)              |
 | forceHide            | any                           | when change forceHide, tooltip will be forced hidden (Default null)   |
 | `...props`           | other                         | Other props of child elements                                         |
 
